@@ -1,6 +1,6 @@
-1. header.jsx with header
+1. header.jsx with header done
 2. main {
-
+    logos jsx
     trendinggamees.jsx
     trendinggames.json
 
