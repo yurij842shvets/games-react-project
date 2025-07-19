@@ -1,0 +1,25 @@
+[
+  {
+    "img": "img/first_game.jpg",
+    "icon": "img/fire.svg",
+    "text": "Followers"
+  },
+
+  {
+    "img": "img/second_game.jpg",
+    "icon": "img/fire.svg",
+    "text": "Followers"
+  },
+
+  {
+    "img": "img/third_game.jpg",
+    "icon": "img/fire.svg",
+    "text": "Followers"
+  },
+
+  {
+    "img": "img/fourth_game.jpg",
+    "icon": "img/fire.svg",
+    "text": "Followers"
+  }
+]

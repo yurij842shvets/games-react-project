@@ -37,7 +37,7 @@ const Joystick = styled.div`
     left: 250px;
     top: -260px;
 
-    background-image: url("./img/joy_stick.png");
+    background-image: url("img/joy_stick.png");
     width: 440px;
     height: 750px;
   }
@@ -51,7 +51,7 @@ const UnityLogo = styled.div `
     left: 120px;
     top: 180px;
 
-    background-image: url("./img/unity.png");
+    background-image: url("img/unity.png");
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
@@ -67,7 +67,7 @@ const EyeLogo = styled.div `
     left: 250px;
     top: -70px;
 
-    background-image: url("./img/eye.png");
+    background-image: url("img/eye.png");
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
@@ -83,7 +83,7 @@ const UnrealLogo = styled.div `
     left: 580px;
     top: -60px;
 
-    background-image: url("./img/unreal.png");
+    background-image: url("img/unreal.png");
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
