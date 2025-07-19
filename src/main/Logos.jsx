@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const LogosContainer = styled.div`
   margin-top: 100px;
+  display: flex;
 `;
 
 const GameDevText = styled.p`
@@ -29,16 +30,66 @@ const DetailsButton = styled.button`
 
 const Joystick = styled.div`
   position: relative;
-  padding-left: 20px;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 250px;
+    top: -260px;
+
     background-image: url("./img/joy_stick.png");
+    width: 440px;
+    height: 750px;
   }
 `;
+const UnityLogo = styled.div `
+    position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: 180px;
+
+    background-image: url("./img/unity.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+  }
+`
+
+const EyeLogo = styled.div `
+    position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 250px;
+    top: -70px;
+
+    background-image: url("./img/eye.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+  }
+`
+
+const UnrealLogo = styled.div `
+    position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 580px;
+    top: -60px;
+
+    background-image: url("./img/unreal.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+  }
+`
+
 
 export default function Logos() {
   return (
@@ -57,11 +108,10 @@ export default function Logos() {
         </div>
 
         <div>
-          <div></div>
-          <div></div>
+          <UnityLogo></UnityLogo>
+          <EyeLogo></EyeLogo>
           <Joystick></Joystick>
-          <div></div>
-          <div></div>
+          <UnrealLogo></UnrealLogo>
         </div>
       </LogosContainer>
     </>
