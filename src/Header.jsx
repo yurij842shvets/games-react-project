@@ -12,7 +12,7 @@ const Link = styled.a`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 25px;
+  gap: 35px;
 `;
 
 const Logo = styled.h1`

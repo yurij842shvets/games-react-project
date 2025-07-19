@@ -7,18 +7,22 @@ const LogosContainer = styled.div`
 
 const GameDevText = styled.p`
   color: orange;
+  font-family: "Poppins", sans-serif;
 `;
-const Logo = styled.h2`
+const Title = styled.h2`
   font-weight: bold;
   color: #fff;
   width: 280px;
   font-size: 42px;
+  font-family: "Poppins", sans-serif;
 `;
 
 const Description = styled.p`
   color: #fff;
   width: 400px;
   font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 `;
 
 const DetailsButton = styled.button`
@@ -26,6 +30,7 @@ const DetailsButton = styled.button`
   color: #fff;
   padding: 15px 25px;
   margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 `;
 
 const Joystick = styled.div`
@@ -42,8 +47,8 @@ const Joystick = styled.div`
     height: 750px;
   }
 `;
-const UnityLogo = styled.div `
-    position: relative;
+const UnityLogo = styled.div`
+  position: relative;
 
   &::after {
     content: "";
@@ -56,10 +61,10 @@ const UnityLogo = styled.div `
     width: 200px;
     height: 200px;
   }
-`
+`;
 
-const EyeLogo = styled.div `
-    position: relative;
+const EyeLogo = styled.div`
+  position: relative;
 
   &::after {
     content: "";
@@ -72,10 +77,10 @@ const EyeLogo = styled.div `
     width: 200px;
     height: 200px;
   }
-`
+`;
 
-const UnrealLogo = styled.div `
-    position: relative;
+const UnrealLogo = styled.div`
+  position: relative;
 
   &::after {
     content: "";
@@ -88,8 +93,7 @@ const UnrealLogo = styled.div `
     width: 200px;
     height: 200px;
   }
-`
-
+`;
 
 export default function Logos() {
   return (
@@ -97,7 +101,7 @@ export default function Logos() {
       <LogosContainer>
         <div>
           <GameDevText>3D game Dev</GameDevText>
-          <Logo>Work that we produce for our clients</Logo>
+          <Title>Work that we produce for our clients</Title>
           <Description>
             We create next-gen gaming experiences that combine stunning visuals,
             seamless mechanics, and unforgettable storytelling. Trusted by
