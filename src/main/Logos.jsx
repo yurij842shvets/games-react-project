@@ -22,7 +22,6 @@ const Description = styled.p`
   width: 400px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  font-family: "Poppins", sans-serif;
 `;
 
 const DetailsButton = styled.button`

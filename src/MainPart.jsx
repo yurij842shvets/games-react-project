@@ -1,5 +1,6 @@
 import Logos from "./main/Logos";
 import TrendingGames from "./main/TrendingGames";
+import Text from "./main/Text";
 
 export default function MainPart() {
   return (
@@ -7,6 +8,7 @@ export default function MainPart() {
       <main>
         <Logos />;
         <TrendingGames />
+        <Text/>
       </main>
     </>
   );
