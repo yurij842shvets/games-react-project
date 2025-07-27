@@ -4,7 +4,7 @@ const Title = styled.h2`
   font-weight: bold;
   color: #fff;
   width: 850px;
-  font-size: 42px;
+  font-size: 40px;
   font-family: "Poppins", sans-serif;
   text-align: center;
 `;
@@ -20,6 +20,7 @@ const DescriptionTitle = styled.h3`
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   margin-top: 30px;
+  margin-left: 60px;
 `;
 
 const Description = styled.p`
@@ -27,12 +28,14 @@ const Description = styled.p`
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   width: 540px;
+  margin-left: 60px;
 `;
 const SpidermanImage = styled.img`
   margin-top: 50px;
   border-radius: 20px;
   z-index: 1;
   position: relative;
+  left: 80px;
 `;
 
 const ImageBackgroundStyle = styled.div`
@@ -42,7 +45,7 @@ const ImageBackgroundStyle = styled.div`
   &::after {
     content: "";
     position: absolute;
-    right: 190px;
+    right: 320px;
     top: -20px;
 
     width: 200px;
@@ -68,10 +71,10 @@ export default function Text() {
           Embark on a journey into a new world of games
         </DescriptionTitle>
         <Description>
-          Discover exciting virtual worlds, complete unique levels, develop
-          your character, and explore what was once unreachable. The platform
-          gathers the most engaging titles to keep you up to date with the best
-          in the world of gaming.
+          Discover exciting virtual worlds, complete unique levels, develop your
+          character, and explore what was once unreachable. The platform gathers
+          the most engaging titles to keep you up to date with the best in the
+          world of gaming.
         </Description>
         <ImageBackgroundStyle></ImageBackgroundStyle>
         <SpidermanImage src="./img/spiderman.jpg" alt="spiderman" />
