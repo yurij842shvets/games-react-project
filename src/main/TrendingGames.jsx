@@ -48,10 +48,10 @@ export default function TrendingGames() {
         </TextContainer>
 
         <DataContainer>
-          {trendinggames.map(({ img, icon, text }) => (
-            <div>
+          {trendinggames.map(({ img, icon, text, index }) => (
+            <div key={index}>
               <img src={img} alt={text} />
-              <Text>
+              <Text >
                 <img src={icon} alt={text} />
                 {text}
               </Text>

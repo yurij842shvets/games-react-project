@@ -28,25 +28,53 @@ const Description = styled.p`
   font-family: "Poppins", sans-serif;
   width: 540px;
 `;
+const SpidermanImage = styled.img`
+  margin-top: 50px;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+`;
+
+const ImageBackgroundStyle = styled.div`
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 190px;
+    top: -20px;
+
+    width: 200px;
+    height: 150px;
+    background-image: url("./img/dots-style.png");
+    z-index: -1;
+    background-size: cover;
+  }
+`;
 
 export default function Text() {
   return (
     <div>
       <TitleContainer>
         <Title>
-          Відкрий для себе найпопулярніші ігри. Дивись, у що грають мільйони, і
-          приєднуйся до геймерської спільноти з усього світу.
+          Dive into the world of the most popular games. See what millions are
+          playing and join the global gaming community.
         </Title>
       </TitleContainer>
 
       <div>
-        <DescriptionTitle> Занурюйся в новий світ ігор</DescriptionTitle>
+        <DescriptionTitle>
+          Embark on a journey into a new world of games
+        </DescriptionTitle>
         <Description>
-          Відкрий для себе захопливі віртуальні світи, проходь унікальні рівні,
-          розвивай свого героя та досліджуй те, що раніше було недосяжним.
-          Платформа збирає найцікавіші тайтли, щоб ти завжди був у курсі
-          найкращого в світі ігор.
+          Discover exciting virtual worlds, complete unique levels, develop
+          your character, and explore what was once unreachable. The platform
+          gathers the most engaging titles to keep you up to date with the best
+          in the world of gaming.
         </Description>
+        <ImageBackgroundStyle></ImageBackgroundStyle>
+        <SpidermanImage src="./img/spiderman.jpg" alt="spiderman" />
       </div>
     </div>
   );
