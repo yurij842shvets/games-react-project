@@ -1,0 +1,36 @@
+[
+  {
+    "img": "/img/mobile-dev.png",
+    "text": "Mobile Game Development",
+    "icon": "/img/arrow.png"
+  },
+
+  {
+    "img": "/img/computer-dev.png",
+    "text": "PC Game Development",
+    "icon": "/img/arrow.png"
+  },
+
+  {
+    "img": "/img/ps4-dev.png",
+    "text": "PS4 Game Development",
+    "icon": "/img/arrow.png"
+  },
+
+  {
+    "img": "/img/vr-glasses-dev.png",
+    "text": "AR/VR Solutions",
+    "icon": "/img/arrow.png"
+  },
+
+  {
+    "img": "/img/ar-vr-dev.png",
+    "text": "AR/VR design",
+    "icon": "/img/arrow.png"
+  },
+  {
+    "img": "/img/modeling-dev.png",
+    "text": "3D Modelings",
+    "icon": "/img/arrow.png"
+  }
+]

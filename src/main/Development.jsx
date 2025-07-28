@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import data from "../../development.json";
 
 const DevelopmentContainer = styled.div`
   background-image: url("./img/Development.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
 `;
 
 const TextContainer = styled.div`
@@ -37,6 +37,36 @@ const Description = styled.p`
   text-align: center;
 `;
 
+const DataContainer = styled.div`
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 90px auto;
+`;
+
+const ImageContainer = styled.div`
+  width: 65px;
+  height: 65px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const Grid = styled.div`
+  display: grid;
+  grid-template-rows: auto auto auto; 
+  justify-items: center; 
+  margin-bottom: 70px;
+`;
+
+const Text = styled.p`
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+`;
+
 export default function Development() {
   return (
     <DevelopmentContainer>
@@ -53,7 +83,17 @@ export default function Development() {
         </Description>
       </TextContainer>
 
-      <div></div>
+      <DataContainer>
+        {data.map(({ img, text, icon }, index) => (
+          <Grid key={index}>
+            <ImageContainer>
+              <img src={img} alt={text} />
+            </ImageContainer>
+            <Text>{text}</Text>
+            <img src={icon} alt={text} />
+          </Grid>
+        ))}
+      </DataContainer>
     </DevelopmentContainer>
   );
 }
