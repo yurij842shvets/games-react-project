@@ -6,8 +6,8 @@
    text,jsx                                              done
    development.jsx                                       done
    development json                                      done
-   recentgames.jsx                                       soon
-   recentgames.json                                      soon
+   recentgames.jsx                                       done
+   recentgames.json                                      done
    formr.jsx                                             soon
    }
    footer.jsx                                            soon
