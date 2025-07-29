@@ -30,6 +30,16 @@ const ImageContainer = styled.div`
   width: 1210px;
 `;
 
+const SeeAllButton = styled.button`
+  display: block;
+  font-family: "Rubik", sans-serif;
+  background-color: #242424;
+  color: #fff;
+  width: 139px;
+  height: 57px;
+  margin: 90px auto;
+`;
+
 export default function RecentProjects() {
   return (
     <>
@@ -45,6 +55,8 @@ export default function RecentProjects() {
             <Image key={index} src={img} alt="Recent Project" />
           ))}
         </ImageContainer>
+
+        <SeeAllButton>SEE ALL</SeeAllButton>
       </div>
     </>
   );

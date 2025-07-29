@@ -8,7 +8,7 @@
    development json                                      done
    recentgames.jsx                                       done
    recentgames.json                                      done
-   formr.jsx                                             soon
+   forms.jsx                                             soon
    }
    footer.jsx                                            soon
 
