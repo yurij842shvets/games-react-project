@@ -28,22 +28,24 @@ const EmailContainer = styled.div`
 `;
 
 const Input = styled.input`
-  padding: 10px 12px;
+  padding: 0 15px;
   border: none;
   outline: none;
   font-size: 14px;
   width: 250px;
   font-family: "Poppins", sans-serif;
+  background: #fff;
 `;
 
 const Button = styled.button`
-  padding: 10px 16px;
+  padding: 12px 16px;
   background-color: orange;
   color: white;
   border: none;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
 `;
 
 const EmailWrapper = styled.div`
@@ -52,6 +54,8 @@ const EmailWrapper = styled.div`
   border: 1px solid #000;
   border-radius: 20px;
   overflow: hidden;
+  padding: 8px;
+  background-color: #ffffff;
 `;
 
 export default function Email() {
