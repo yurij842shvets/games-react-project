@@ -25,6 +25,7 @@ const EmailContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 60px 0 0 70px;
+  padding: 20px;
 `;
 
 const Input = styled.input`
