@@ -10,6 +10,6 @@
    recentgames.json                                      done
    email.jsx                                             done
    }
-   footer.jsx                                            soon
+   footer.jsx                                            done
 
    end first page                                        in procces

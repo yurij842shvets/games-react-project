@@ -36,6 +36,7 @@ const Input = styled.input`
   width: 250px;
   font-family: "Poppins", sans-serif;
   background: #fff;
+  color: #000;
 `;
 
 const Button = styled.button`
