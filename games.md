@@ -12,4 +12,5 @@
    }
    footer.jsx                                            done
 
+   adaptive and responsive
    end first page                                        in procces

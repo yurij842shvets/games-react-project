@@ -35,6 +35,11 @@ const DataContainer = styled.div`
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1041px) {
+    width: 600px;
+    margin: 50px auto;  
+  }
 `;
 
 

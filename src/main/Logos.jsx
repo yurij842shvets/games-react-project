@@ -45,6 +45,13 @@ const Joystick = styled.div`
     width: 440px;
     height: 750px;
   }
+
+  @media screen and (max-width: 1158px) {
+    left: -250px;
+  }
+  @media screen and (max-width: 905px) {
+    display: none;
+  }
 `;
 const UnityLogo = styled.div`
   position: relative;
@@ -52,7 +59,7 @@ const UnityLogo = styled.div`
   &::after {
     content: "";
     position: absolute;
-    left: 120px;
+    left: -120px;
     top: 180px;
 
     background-image: url("./img/unity.png");
@@ -68,7 +75,7 @@ const EyeLogo = styled.div`
   &::after {
     content: "";
     position: absolute;
-    left: 250px;
+    left: 20px;
     top: -70px;
 
     background-image: url("./img/eye.png");
@@ -84,7 +91,7 @@ const UnrealLogo = styled.div`
   &::after {
     content: "";
     position: absolute;
-    left: 580px;
+    left: 320px;
     top: -60px;
 
     background-image: url("./img/unreal.png");
