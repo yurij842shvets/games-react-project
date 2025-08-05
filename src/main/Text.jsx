@@ -31,11 +31,20 @@ const Description = styled.p`
   margin-left: 60px;
 `;
 const SpidermanImage = styled.img`
-  margin-top: 50px;
+  display: block;
+  max-width: 85%;
+  margin: 20px;
   border-radius: 20px;
   z-index: 1;
   position: relative;
   left: 80px;
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 711px) {
+    position: absolute;
+    margin: 50px 0;
+  }
 `;
 
 const ImageBackgroundStyle = styled.div`
@@ -53,6 +62,10 @@ const ImageBackgroundStyle = styled.div`
     background-image: url("./img/dots-style.png");
     z-index: -1;
     background-size: cover;
+  }
+
+  @media screen and (max-width: 711px) {
+    display: none;
   }
 `;
 
@@ -77,7 +90,11 @@ export default function Text() {
           world of gaming.
         </Description>
         <ImageBackgroundStyle></ImageBackgroundStyle>
-        <SpidermanImage src="./img/spiderman.jpg" alt="spiderman" />
+        <SpidermanImage
+          src="./img/spiderman.jpg"
+          srcSet="./img/spiderman.jpg 1x, ./img/spiderman@2x.jpg 2x, ./img/spiderman@3x.jpg 3x"
+          alt="spiderman"
+        />
       </div>
     </div>
   );

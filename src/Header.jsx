@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import Burger from "./Burger";
+import Menu from "./Menu";
+import React, { useState } from "react";
 
 const Wrapper = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 `;
 
@@ -12,7 +15,13 @@ const Link = styled.a`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 35px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 55px;
+
+  @media screen and (max-width: 829px) {
+    display: none;
+  }
 `;
 
 const Logo = styled.h1`
@@ -40,7 +49,16 @@ const Line = styled.div`
   }
 `;
 
+const BurgerWrapper = styled.div`
+  display: none;
+
+  @media screen and (max-width: 829px) {
+    display: block;
+  }
+`;
+
 export default function Header() {
+  const [open, setOpen] = useState(false);
   return (
     <Wrapper>
       <Logo>LOGO</Logo>
@@ -53,8 +71,13 @@ export default function Header() {
         <Link href="#">About us</Link>
         <Link href="#">Portfolio</Link>
         <Link href="#">News</Link>
+        <ContactButton>Contact us</ContactButton>
       </Nav>
-      <ContactButton>Contact us</ContactButton>
+
+      <BurgerWrapper>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} />
+      </BurgerWrapper>
     </Wrapper>
   );
 }

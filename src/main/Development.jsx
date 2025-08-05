@@ -43,6 +43,10 @@ const DataContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 90px auto;
+
+  @media screen and (max-width: 992px) {
+    width: 600px;
+  }
 `;
 
 const ImageContainer = styled.div`

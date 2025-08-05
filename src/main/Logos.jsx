@@ -66,6 +66,10 @@ const UnityLogo = styled.div`
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+
+    @media screen and (max-width: 905px) {
+      left: 15px;
+    }
   }
 `;
 
@@ -82,6 +86,10 @@ const EyeLogo = styled.div`
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+
+    @media screen and (max-width: 905px) {
+      top: 10px;
+    }
   }
 `;
 
@@ -98,6 +106,11 @@ const UnrealLogo = styled.div`
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+
+    @media screen and (max-width: 905px) {
+      left: 34px;
+      top: 300px;
+    }
   }
 `;
 
