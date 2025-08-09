@@ -35,7 +35,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 55px;
+  gap: 105px;
 @media screen and (max-width: 900px) {
 
   flex-direction: column;}

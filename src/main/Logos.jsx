@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const LogosContainer = styled.div`
-  margin-top: 100px;
+  margin: 100px 45px 0;
   display: flex;
 
   @media screen and (max-width: 905px) {

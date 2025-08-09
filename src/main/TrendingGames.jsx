@@ -26,9 +26,10 @@ const Text = styled.p`
 `;
 
 const TextContainer = styled.div`
-  margin-top: 100px;
+  margin: 100px 45px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const DataContainer = styled.div`
