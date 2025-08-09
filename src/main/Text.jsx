@@ -44,6 +44,7 @@ const SpidermanImage = styled.img`
   @media screen and (max-width: 711px) {
     position: absolute;
     margin: 50px 0;
+    width: 90%;
   }
 `;
 
@@ -84,9 +85,8 @@ export default function Text() {
           Embark on a journey into a new world of games
         </DescriptionTitle>
         <Description>
-          Discover exciting virtual worlds, complete unique levels, develop your
-          character, and explore what was once unreachable. The platform gathers
-          the most engaging titles to keep you up to date with the best in the
+          Discover exciting virtual worlds, complete unique levels and develop your
+          character. The platform gathers engaging titles to keep you up to date with the best in the
           world of gaming.
         </Description>
         <ImageBackgroundStyle></ImageBackgroundStyle>

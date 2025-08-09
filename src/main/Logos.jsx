@@ -3,6 +3,10 @@ import styled from "styled-components";
 const LogosContainer = styled.div`
   margin-top: 100px;
   display: flex;
+
+  @media screen and (max-width: 905px) {
+    margin: 100px 15% 0;
+  }
 `;
 
 const GameDevText = styled.p`
@@ -59,13 +63,17 @@ const UnityLogo = styled.div`
   &::after {
     content: "";
     position: absolute;
-    left: -120px;
+    left: 80px;
     top: 180px;
 
     background-image: url("./img/unity.png");
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+
+    @media screen and (max-width: 1158px) {
+      left: -120px;
+    }
 
     @media screen and (max-width: 905px) {
       left: 15px;
@@ -79,13 +87,17 @@ const EyeLogo = styled.div`
   &::after {
     content: "";
     position: absolute;
-    left: 20px;
+    left: 270px;
     top: -70px;
 
     background-image: url("./img/eye.png");
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+
+    @media screen and (max-width: 1158px) {
+      left: 20px;
+    }
 
     @media screen and (max-width: 905px) {
       top: 10px;
@@ -99,13 +111,17 @@ const UnrealLogo = styled.div`
   &::after {
     content: "";
     position: absolute;
-    left: 320px;
+    left: 600px;
     top: -60px;
 
     background-image: url("./img/unreal.png");
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
+
+    @media screen and (max-width: 1158px) {
+      left: 320px;
+    }
 
     @media screen and (max-width: 905px) {
       left: 34px;

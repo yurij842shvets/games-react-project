@@ -19,15 +19,25 @@ const Description = styled.p`
 `;
 
 const Image = styled.img`
-  border-radius: 25px;
-  margin: 15px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
 `;
 
 const ImageContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   margin: 50px auto;
-  width: 1210px;
+  width: 1000px;
+  @media screen and (max-width: 1006px) {
+    width: 600px;
+  }
+  @media screen and (max-width: 609px) {
+    width: 300px;
+  }
 `;
 
 const SeeAllButton = styled.button`
