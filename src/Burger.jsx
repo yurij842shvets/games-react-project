@@ -1,55 +1,83 @@
-import React from "react";
+import { useState } from "react";
+import "./App.css";
 import styled from "styled-components";
 
-const StyledBurger = styled.button`
-  left: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
+const ContactButton = styled.button`
+  background-color: orange;
+  color: #fff;
+  padding: 15px 25px;
+  
+`;
+const Line = styled.div`
+  position: relative;
+  padding-left: 20px;
 
-  &:focus {
-    outline: none;
-  }
-
-  div {
-    width: 2rem;
-    height: 0.25rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-
-    :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-    }
-
-    :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 2px;
+    background-color: orange;
+    border-radius: 30px;
   }
 `;
 
-const Burger = ({ open, setOpen }) => {
-  return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      <div />
-      <div />
-      <div />
-    </StyledBurger>
-  );
-};
+const Link = styled.a`
+  color: #fff;
 
-export default Burger;
+  @media screen and (max-width: 900px) {
+  color: #000;}
+`;
+
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 55px;
+@media screen and (max-width: 900px) {
+
+  flex-direction: column;}
+`;
+
+const BurgerWrapper = styled.div`
+`
+
+
+export default function Burger({ isOpen, setIsOpen }) {
+  return (
+    <>
+      <BurgerWrapper>
+        <div
+          className={`burger ${isOpen ? "open" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+          style={{ display: isOpen ? "none" : "" }}
+        >
+          <div className="burger-line"></div>
+          <div className="burger-line"></div>
+          <div className="burger-line"></div>
+        </div>
+
+        <div className={`menu ${isOpen ? "show" : ""}`}>
+          <div className={`burger open close`} onClick={() => setIsOpen(false)}>
+            <div className="burger-line"></div>
+            <div className="burger-line"></div>
+            <div className="burger-line"></div>
+          </div>
+          <Nav>
+            <div>
+              <Link href="#">Home</Link>
+              <Line></Line>
+            </div>
+
+            <Link href="#">About us</Link>
+            <Link href="#">Portfolio</Link>
+            <Link href="#">News</Link>
+            <ContactButton>Contact us</ContactButton>
+          </Nav>
+        </div>
+      </BurgerWrapper>
+    </>
+  );
+}
