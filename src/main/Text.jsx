@@ -29,11 +29,14 @@ const Description = styled.p`
   font-family: "Poppins", sans-serif;
   width: 540px;
   margin-left: 60px;
+  @media screen and (max-width: 633px) {
+    width: 260px;
+  }
 `;
 const SpidermanImage = styled.img`
   display: block;
   max-width: 85%;
-  margin: 20px;
+  margin-top: 20px;
   border-radius: 20px;
   z-index: 1;
   position: relative;
@@ -43,8 +46,8 @@ const SpidermanImage = styled.img`
 
   @media screen and (max-width: 711px) {
     position: absolute;
-    margin: 50px 0;
-    width: 90%;
+    margin: 50px 40px;
+    width: 70%;
   }
 `;
 
@@ -63,6 +66,10 @@ const ImageBackgroundStyle = styled.div`
     background-image: url("./img/dots-style.png");
     z-index: -1;
     background-size: cover;
+
+    @media screen and (max-width: 1019px) {
+      right: 200px;
+    }
   }
 
   @media screen and (max-width: 711px) {
@@ -75,8 +82,7 @@ export default function Text() {
     <div>
       <TitleContainer>
         <Title>
-          Dive into the world of the most popular games. See what millions are
-          playing and join the global gaming community.
+          Dive into the world of games. See what millions play and join the global gaming community.
         </Title>
       </TitleContainer>
 
@@ -85,9 +91,9 @@ export default function Text() {
           Embark on a journey into a new world of games
         </DescriptionTitle>
         <Description>
-          Discover exciting virtual worlds, complete unique levels and develop your
-          character. The platform gathers engaging titles to keep you up to date with the best in the
-          world of gaming.
+          Discover exciting virtual worlds, complete unique levels and develop
+          your character. The platform gathers engaging titles to keep you up to
+          date with the best in the world of gaming.
         </Description>
         <ImageBackgroundStyle></ImageBackgroundStyle>
         <SpidermanImage

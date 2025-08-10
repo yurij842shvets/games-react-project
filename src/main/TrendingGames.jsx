@@ -41,6 +41,10 @@ const DataContainer = styled.div`
     width: 600px;
     margin: 50px auto;  
   }
+
+    @media screen and (max-width: 595px) {
+    width: 300px;
+  }
 `;
 
 

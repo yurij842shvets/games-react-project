@@ -26,6 +26,12 @@ const EmailContainer = styled.div`
   align-items: center;
   margin: 60px 0 0 70px;
   padding: 20px;
+  @media screen and (max-width: 1288px) {
+  flex-direction: column;
+  justify-content: center;
+    width: 700px;
+    height: 260px;
+  }
 `;
 
 const Input = styled.input`
