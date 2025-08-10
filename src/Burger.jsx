@@ -6,7 +6,7 @@ const ContactButton = styled.button`
   background-color: orange;
   color: #fff;
   padding: 15px 25px;
-  
+    z-index: 1;
 `;
 const Line = styled.div`
   position: relative;
@@ -22,33 +22,32 @@ const Line = styled.div`
     background-color: orange;
     border-radius: 30px;
   }
+
 `;
 
 const Link = styled.a`
   color: #fff;
+  z-index: 1;
 
   @media screen and (max-width: 900px) {
-  color: #000;}
+    color: #000;
+  }
 `;
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 105px;
-@media screen and (max-width: 900px) {
-
-  flex-direction: column;}
+  gap: 80px;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
-
-const BurgerWrapper = styled.div`
-`
-
 
 export default function Burger({ isOpen, setIsOpen }) {
   return (
     <>
-      <BurgerWrapper>
+      <div>
         <div
           className={`burger ${isOpen ? "open" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
@@ -77,7 +76,7 @@ export default function Burger({ isOpen, setIsOpen }) {
             <ContactButton>Contact us</ContactButton>
           </Nav>
         </div>
-      </BurgerWrapper>
+      </div>
     </>
   );
 }

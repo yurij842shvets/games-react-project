@@ -4,7 +4,7 @@ const LogosContainer = styled.div`
   margin: 100px 45px 0;
   display: flex;
 
-  @media screen and (max-width: 905px) {
+  @media screen and (max-width: 954px) {
     margin: 100px 15% 0;
   }
 `;
@@ -50,10 +50,10 @@ const Joystick = styled.div`
     height: 750px;
   }
 
-  @media screen and (max-width: 1158px) {
+  @media screen and (max-width: 1200px) {
     left: -250px;
   }
-  @media screen and (max-width: 905px) {
+  @media screen and (max-width: 954px) {
     display: none;
   }
 `;
@@ -71,12 +71,16 @@ const UnityLogo = styled.div`
     width: 200px;
     height: 200px;
 
-    @media screen and (max-width: 1158px) {
+    @media screen and (max-width: 1200px) {
       left: -120px;
     }
 
-    @media screen and (max-width: 905px) {
+    @media screen and (max-width: 954px) {
       left: 15px;
+    }
+    @media screen and (max-width: 692px) {
+      top: 545px;
+      left: -320px;
     }
   }
 `;
@@ -95,12 +99,17 @@ const EyeLogo = styled.div`
     width: 200px;
     height: 200px;
 
-    @media screen and (max-width: 1158px) {
+    @media screen and (max-width: 1200px) {
       left: 20px;
     }
 
-    @media screen and (max-width: 905px) {
+    @media screen and (max-width: 954px) {
       top: 10px;
+    }
+
+    @media screen and (max-width: 692px) {
+      left: -440px;
+      top: 510px;
     }
   }
 `;
@@ -119,13 +128,17 @@ const UnrealLogo = styled.div`
     width: 200px;
     height: 200px;
 
-    @media screen and (max-width: 1158px) {
+    @media screen and (max-width: 1200px) {
       left: 320px;
     }
 
-    @media screen and (max-width: 905px) {
+    @media screen and (max-width: 954px) {
       left: 34px;
       top: 300px;
+    }
+    @media screen and (max-width: 692px) {
+      top: 525px;
+      left: -190px;
     }
   }
 `;

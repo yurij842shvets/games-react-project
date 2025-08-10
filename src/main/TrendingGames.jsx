@@ -30,6 +30,11 @@ const TextContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const DataContainer = styled.div`
@@ -39,14 +44,13 @@ const DataContainer = styled.div`
   flex-wrap: wrap;
   @media screen and (max-width: 1041px) {
     width: 600px;
-    margin: 50px auto;  
+    margin: 50px auto;
   }
 
-    @media screen and (max-width: 595px) {
+  @media screen and (max-width: 595px) {
     width: 300px;
   }
 `;
-
 
 export default function TrendingGames() {
   return (
@@ -61,7 +65,7 @@ export default function TrendingGames() {
           {trendinggames.map(({ img, icon, text, index }) => (
             <div key={index}>
               <img src={img} alt={text} />
-              <Text >
+              <Text>
                 <img src={icon} alt={text} />
                 {text}
               </Text>

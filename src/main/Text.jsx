@@ -82,7 +82,7 @@ export default function Text() {
     <div>
       <TitleContainer>
         <Title>
-          Dive into the world of games. See what millions play and join the global gaming community.
+          Dive into the world of games. Join the global gaming community with millions.
         </Title>
       </TitleContainer>
 
