@@ -19,6 +19,9 @@ const Title = styled.h2`
   width: 280px;
   font-size: 42px;
   font-family: "Poppins", sans-serif;
+      @media screen and (max-width: 387px) {
+      width: 200px;
+    }
 `;
 
 const Description = styled.p`
@@ -26,6 +29,10 @@ const Description = styled.p`
   width: 400px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 557px) {
+    width: 250px;
+  }
+    
 `;
 
 const DetailsButton = styled.button`
@@ -82,6 +89,14 @@ const UnityLogo = styled.div`
       top: 545px;
       left: -320px;
     }
+
+    @media screen and (max-width: 557px) {
+      top: 590px;
+      left: -202px;
+    }
+    @media screen and (max-width: 387px) {
+      display: none;
+    }
   }
 `;
 
@@ -110,6 +125,13 @@ const EyeLogo = styled.div`
     @media screen and (max-width: 692px) {
       left: -440px;
       top: 510px;
+    }
+    @media screen and (max-width: 557px) {
+      top: 555px;
+      left: -320px;
+    }
+    @media screen and (max-width: 387px) {
+      display: none;
     }
   }
 `;
@@ -140,6 +162,12 @@ const UnrealLogo = styled.div`
       top: 525px;
       left: -190px;
     }
+    @media screen and (max-width: 557px) {
+      top: 570px;
+      left: -85px;
+    }
+    @media screen and (max-width: 387px) {
+    display: none;
   }
 `;
 
@@ -152,9 +180,8 @@ export default function Logos() {
           <Title>Work that we produce for our clients</Title>
           <Description>
             We create next-gen gaming experiences that combine stunning visuals,
-            seamless mechanics, and unforgettable storytelling. Trusted by
-            global studios, we bring your game ideas to life — from concept to
-            release.
+            unforgettable storytelling and more. Trusted by global studios, we
+            bring your game ideas to life.
           </Description>
           <DetailsButton>Get more details</DetailsButton>
         </div>

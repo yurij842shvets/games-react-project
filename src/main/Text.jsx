@@ -32,6 +32,9 @@ const Description = styled.p`
   @media screen and (max-width: 633px) {
     width: 260px;
   }
+  @media screen and (max-width: 366px) {
+    width: 200px;
+  }
 `;
 const SpidermanImage = styled.img`
   display: block;
@@ -46,7 +49,6 @@ const SpidermanImage = styled.img`
 
   @media screen and (max-width: 711px) {
     position: absolute;
-    margin: 50px 40px;
     width: 70%;
   }
 `;
@@ -82,7 +84,8 @@ export default function Text() {
     <div>
       <TitleContainer>
         <Title>
-          Dive into the world of games. Join the global gaming community with millions.
+          Dive into the world of games. Join the global gaming community with
+          millions.
         </Title>
       </TitleContainer>
 

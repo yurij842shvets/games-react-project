@@ -31,10 +31,18 @@ const TextContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  @media screen and (max-width: 692px) {
+   margin-top: 200px;
+  }
+
   @media screen and (max-width: 375px) {
     flex-direction: column;
     text-align: center;
   }
+
+      @media screen and (max-width: 387px) {
+      margin-top: 50px;
+    }
 `;
 
 const DataContainer = styled.div`

@@ -35,6 +35,12 @@ const Description = styled.p`
   font-family: "Poppins", sans-serif;
   width: 900px;
   text-align: center;
+  @media screen and (max-width: 901px) {
+    width: 400px;
+  }
+    @media screen and (max-width: 421px) {
+    width: 250px;
+    }
 `;
 
 const DataContainer = styled.div`
@@ -46,6 +52,9 @@ const DataContainer = styled.div`
 
   @media screen and (max-width: 992px) {
     width: 600px;
+  }
+  @media screen and (max-width: 565px) {
+    width: 300px;
   }
 `;
 
@@ -60,8 +69,8 @@ const ImageContainer = styled.div`
 `;
 const Grid = styled.div`
   display: grid;
-  grid-template-rows: auto auto auto; 
-  justify-items: center; 
+  grid-template-rows: auto auto auto;
+  justify-items: center;
   margin-bottom: 70px;
 `;
 
