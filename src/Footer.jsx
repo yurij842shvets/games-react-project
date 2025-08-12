@@ -75,6 +75,7 @@ const FooterText = styled.p`
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   margin: 40px auto;
+  text-align: center;
 `;
 
 const SecondBlock = styled.div`
