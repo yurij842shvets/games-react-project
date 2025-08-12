@@ -41,6 +41,11 @@ const EmailContainer = styled.div`
     width: 450px;
     margin: 50px 0;
   }
+
+  @media screen and (max-width: 508px) {
+    width: 100%;
+    background-color: transparent;
+  }
 `;
 
 const Input = styled.input`
@@ -52,8 +57,15 @@ const Input = styled.input`
   font-family: "Poppins", sans-serif;
   background: #fff;
   color: #000;
+  border-radius: 20px;
   @media screen and (max-width: 508px) {
     width: 100px;
+  }
+  @media screen and (max-width: 385px) {
+    width: 70px;
+  }
+  @media screen and (max-width: 373px) {
+    overflow: auto;
   }
 `;
 
@@ -73,11 +85,14 @@ const EmailWrapper = styled.div`
   width: fit-content;
   border: 1px solid #000;
   border-radius: 20px;
-  overflow: hidden;
   padding: 4px;
   background-color: #ffffff;
   @media screen and (max-width: 508px) {
-    margin-right: 80px;
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: 407px) {
+    margin-right: 40px;
   }
 `;
 

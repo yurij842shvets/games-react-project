@@ -11,6 +11,9 @@ const Longtext = styled.p`
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   width: 370px;
+  @media screen and (max-width:403px) {
+    width: 200px;
+}
 `;
 
 const Logo = styled.h3`
@@ -23,16 +26,17 @@ const Logo = styled.h3`
 const FooterContainer = styled.footer`
   margin-top: 100px;
   display: flex;
-  justify-contnet: center;
+  justify-content:center;
   align-items: center;
   flex-direction: column;
 `;
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 70px;
+  margin: 70px 30px 0;
 `;
 
 const ImageContainer = styled.div`
@@ -51,6 +55,9 @@ const ImageWrapper = styled.div`
   justify-content: space-evenly;
   align-items: flex-end;
   gap: 15px;
+  @media screen and (max-width: 675px) {
+    margin: 40px 20px;
+  }
 `;
 
 const FooterBorder = styled.div`
@@ -58,6 +65,8 @@ const FooterBorder = styled.div`
   justify-content: center;
   align-items: center;
   border-top: 1px solid #d2d2d2;
+  box-sizing: border-box;
+  padding: 0 16px;
   width: 100%;
 `;
 
@@ -66,6 +75,12 @@ const FooterText = styled.p`
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   margin: 40px auto;
+`;
+
+const SecondBlock = styled.div`
+  @media screen and (max-width: 675px) {
+    display: none;
+  }
 `;
 
 export default function Footer() {
@@ -82,12 +97,12 @@ export default function Footer() {
             <CommonText>@Logo</CommonText>
           </div>
 
-          <div>
+          <SecondBlock>
             <CommonText>About us</CommonText>
             <CommonText>Zeux</CommonText>
             <CommonText>Portfolio</CommonText>
             <CommonText>Careers</CommonText>
-          </div>
+          </SecondBlock>
 
           <div>
             <CommonText>Contact us</CommonText>
