@@ -39,6 +39,7 @@ const EmailContainer = styled.div`
   }
   @media screen and (max-width: 821px) {
     width: 450px;
+    margin: 50px 0;
   }
 `;
 
@@ -51,6 +52,9 @@ const Input = styled.input`
   font-family: "Poppins", sans-serif;
   background: #fff;
   color: #000;
+  @media screen and (max-width: 508px) {
+    width: 100px;
+  }
 `;
 
 const Button = styled.button`
@@ -70,8 +74,11 @@ const EmailWrapper = styled.div`
   border: 1px solid #000;
   border-radius: 20px;
   overflow: hidden;
-  padding: 8px;
+  padding: 4px;
   background-color: #ffffff;
+  @media screen and (max-width: 508px) {
+    margin-right: 80px;
+  }
 `;
 
 const Container = styled.div`
