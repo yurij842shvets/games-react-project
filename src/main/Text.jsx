@@ -77,6 +77,8 @@ const ImageBackgroundStyle = styled.div`
   @media screen and (max-width: 711px) {
     display: none;
   }
+
+  
 `;
 
 export default function Text() {

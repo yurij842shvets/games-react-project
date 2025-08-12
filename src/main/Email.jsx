@@ -12,7 +12,6 @@ const Description = styled.p`
   color: #fff;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  width: 540px;
   margin-left: 60px;
 `;
 

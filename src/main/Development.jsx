@@ -3,8 +3,13 @@ import data from "../../development.json";
 
 const DevelopmentContainer = styled.div`
   background-image: url("./img/Development.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  @media screen and (max-width: 711px) {
+    margin-top: 300px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -38,9 +43,9 @@ const Description = styled.p`
   @media screen and (max-width: 901px) {
     width: 400px;
   }
-    @media screen and (max-width: 421px) {
+  @media screen and (max-width: 421px) {
     width: 250px;
-    }
+  }
 `;
 
 const DataContainer = styled.div`

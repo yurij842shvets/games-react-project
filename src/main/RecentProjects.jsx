@@ -16,6 +16,9 @@ const Description = styled.p`
   width: 500px;
   text-align: center;
   margin: 20px auto;
+  @media screen and (max-width: 542px) {
+    width: 300px;
+  }
 `;
 
 const Image = styled.img`
@@ -49,6 +52,8 @@ const SeeAllButton = styled.button`
   height: 57px;
   margin: 90px auto;
 `;
+
+
 
 export default function RecentProjects() {
   return (
