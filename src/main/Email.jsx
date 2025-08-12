@@ -6,6 +6,9 @@ const Title = styled.h2`
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   margin-left: 60px;
+  @media screen and (max-width: 839px) {
+    margin-left: 0;
+  }
 `;
 
 const Description = styled.p`
@@ -13,6 +16,9 @@ const Description = styled.p`
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   margin-left: 60px;
+  @media screen and (max-width: 839px) {
+    margin-left: 0;
+  }
 `;
 
 const EmailContainer = styled.div`
@@ -21,15 +27,18 @@ const EmailContainer = styled.div`
   height: 190px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 60px 0 0 70px;
   padding: 20px;
   @media screen and (max-width: 1288px) {
-  flex-direction: column;
-  justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     width: 700px;
     height: 260px;
+  }
+  @media screen and (max-width: 821px) {
+    width: 450px;
   }
 `;
 
@@ -65,10 +74,19 @@ const EmailWrapper = styled.div`
   background-color: #ffffff;
 `;
 
+const Container = styled.div`
+  @media screen and (max-width: 821px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
 export default function Email() {
   return (
     <>
-      <div>
+      <Container>
         <div>
           <Title>Never miss an update</Title>
           <Description>
@@ -90,7 +108,7 @@ export default function Email() {
             <Button>Continue</Button>
           </EmailWrapper>
         </EmailContainer>
-      </div>
+      </Container>
     </>
   );
 }
