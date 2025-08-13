@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import data from "../../development.json";
+import data from "../../../development.json";
 
 const DevelopmentContainer = styled.div`
   background-image: url("./img/Development.jpg");

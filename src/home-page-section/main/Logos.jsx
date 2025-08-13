@@ -19,9 +19,9 @@ const Title = styled.h2`
   width: 280px;
   font-size: 42px;
   font-family: "Poppins", sans-serif;
-      @media screen and (max-width: 387px) {
-      width: 200px;
-    }
+  @media screen and (max-width: 387px) {
+    width: 200px;
+  }
 `;
 
 const Description = styled.p`
@@ -32,7 +32,6 @@ const Description = styled.p`
   @media screen and (max-width: 557px) {
     width: 250px;
   }
-    
 `;
 
 const DetailsButton = styled.button`

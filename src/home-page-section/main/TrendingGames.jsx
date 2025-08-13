@@ -1,4 +1,4 @@
-import trendinggames from "../../trendinggames.json";
+import trendinggames from "../../../trendinggames.json";
 import styled from "styled-components";
 
 const Title = styled.p`

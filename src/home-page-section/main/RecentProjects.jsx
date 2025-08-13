@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import data from "../../recentprojects.json";
+import data from "../../../recentprojects.json";
 
 const Title = styled.h2`
   font-weight: bold;
