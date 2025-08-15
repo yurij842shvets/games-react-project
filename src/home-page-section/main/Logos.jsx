@@ -48,7 +48,7 @@ const Joystick = styled.div`
   &::after {
     content: "";
     position: absolute;
-    left: 250px;
+    left: 240px;
     top: -260px;
 
     background-image: url("./img/joy_stick.png");

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HomeBurger from "./HomeBurger";
+import AboutUsBurger from "./AboutUsBurger";
 import { useState } from "react";
 
 const Wrapper = styled.header`
@@ -12,14 +12,16 @@ const Logo = styled.h1`
   color: #fff;
 `;
 
-export default function Header() {
+export default function AboutUsHeader() {
+  
   const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <Wrapper>
-      <Logo>LOGO</Logo>
+    <>
+      <Wrapper>
+        <Logo>LOGO</Logo>
 
-      <HomeBurger isOpen={isOpen} setIsOpen={setIsOpen} />
-    </Wrapper>
+        <AboutUsBurger isOpen={isOpen} setIsOpen={setIsOpen} />
+      </Wrapper>
+    </>
   );
 }

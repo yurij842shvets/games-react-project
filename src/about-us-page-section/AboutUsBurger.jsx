@@ -1,12 +1,12 @@
-import { useState } from "react";
-import "./home-page-css/Burger.css";
+import "../burger-css/Burger.css";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ContactButton = styled.button`
   background-color: orange;
   color: #fff;
   padding: 15px 25px;
-    z-index: 1;
+  z-index: 1;
 `;
 const Line = styled.div`
   position: relative;
@@ -17,15 +17,14 @@ const Line = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 45px;
+    width: 65px;
     height: 2px;
     background-color: orange;
     border-radius: 30px;
   }
-
 `;
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
   color: #fff;
   z-index: 1;
 
@@ -64,15 +63,17 @@ export default function Burger({ isOpen, setIsOpen }) {
             <div className="burger-line"></div>
             <div className="burger-line"></div>
           </div>
+
           <Nav>
+            <StyledLink to="/">Home</StyledLink>
+
             <div>
-              <Link href="#">Home</Link>
+              <StyledLink to="/about">About us</StyledLink>
               <Line></Line>
             </div>
 
-            <Link href="#">About us</Link>
-            <Link href="#">Portfolio</Link>
-            <Link href="#">News</Link>
+            <StyledLink to="/">Portfolio</StyledLink>
+            <StyledLink to="/">News</StyledLink>
             <ContactButton>Contact us</ContactButton>
           </Nav>
         </div>
