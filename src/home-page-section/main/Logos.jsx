@@ -40,6 +40,7 @@ const DetailsButton = styled.button`
   padding: 15px 25px;
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
+  border-radius: 40px;
 `;
 
 const Joystick = styled.div`
