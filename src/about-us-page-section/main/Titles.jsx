@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
+
+import { useState } from "react";
 
 const Title = styled.h2`
   font-weight: bold;
@@ -84,11 +88,28 @@ const DetailsButton = styled.button`
   gap: 10px;
   border-radius: 40px;
 `;
-
-const AboutUsMainImg = styled.img `
-  margin: 0;
+const Switcher = styled.div`
+display: flex;
+gap: 10px;
 `
+
+const AboutUsMainImg = styled.img`
+  width: 650px;
+  height: 550px;
+  margin: 0;
+`;
 export default function Titles() {
+  const images = ["./img/About-us-main.jpg", "./img/keyboard.jpg"];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentIndex(1);
+  };
+  const prevImage = () => {
+    setCurrentIndex(0);
+  };
+
   return (
     <>
       <TitlesContainer>
@@ -115,11 +136,25 @@ export default function Titles() {
             bigger.
           </Description>
 
-          <DetailsButton>Get in Touch <FaArrowRight /></DetailsButton>
+          <DetailsButton>
+            Get in Touch <FaArrowRight />
+          </DetailsButton>
         </div>
 
         <div>
-          <AboutUsMainImg src="./img/About-us-main.jpg" alt="about-us-main-pic" />
+          <AboutUsMainImg
+            src={images[currentIndex]}
+            alt="about-us-main-pic"
+          />
+          <Switcher>
+            <button onClick={prevImage}>
+              <FaArrowLeftLong />
+            </button>
+            <p>{currentIndex + 1} of {images.length}</p>
+            <button onClick={nextImage}>
+              <FaArrowRightLong />
+            </button>
+          </Switcher>
         </div>
       </TitlesContainer>
     </>
