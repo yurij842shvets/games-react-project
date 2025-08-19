@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 import { useState } from "react";
 
